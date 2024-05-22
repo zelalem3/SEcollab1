@@ -39,3 +39,81 @@ body.dark-mode{
         .form-label {
             color: white;
         }
+        /* Add Collaboration Page Styles */
+
+.form-group label {
+  font-weight: bold;
+}
+
+.form-group textarea, .form-group input {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .form-group textarea, .form-group input {
+    width: 60%;
+  }
+}
+
+.btn-primary {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .btn-primary {
+    width: 20%;
+    margin-left: 40%;
+  }
+}
+
+/* Flash message styles */
+.flash-message-container {
+  margin-top: 20px;
+}
+
+.flash-message-list {
+  padding: 0;
+}
+
+.flash-message-item {
+  list-style: none;
+}
+/* Add Collaboration Page Styles */
+
+.form-group label {
+  font-weight: bold;
+}
+
+.form-group textarea, .form-group input {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .form-group textarea, .form-group input {
+    width: 60%;
+  }
+}
+
+.btn-primary {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .btn-primary {
+    width: 20%;
+    margin-left: 40%;
+  }
+}
+
+/* Flash message styles */
+.flash-message-container {
+  margin-top: 20px;
+}
+
+.flash-message-list {
+  padding: 0;
+}
+
+.flash-message-item {
+  list-style: none;
+}

@@ -24,7 +24,7 @@
     <p>{{ collab.Looking_for }}</p>
     <p>Project Owner</p>
 
-    <a style="text-decoration: none;color: black;" href="{{ url_for('profile', id=collab.user.id) }}"><p>{{ collab.user.fname }} {{ collab.user.lname }}</p></a>
+    <a style="text-decoration: none;" href="{{ url_for('profile', id=collab.user.id) }}"><p>{{ collab.user.fname }} {{ collab.user.lname }}</p></a>
 
     <button type="button" id="register" style="margin-left: 40%;" project_id={{ collab.id }} class="btn btn-dark">Register Interest</button>
     <div class="error-message"></div>

@@ -130,3 +130,15 @@
         form button:hover {
             background-color: #c82333;
         }
+            .child {
+        flex: 1 1 calc(50% - 40px);
+        max-width: calc(50% - 40px);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .child {
+        flex: 1 1 calc(100% - 40px);
+        max-width: calc(100% - 40px);
+      }
+    }

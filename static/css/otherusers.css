@@ -117,8 +117,13 @@
 
       padding: 20px;
       box-sizing: border-box;
-      margin-bottom: 10px;
+      margin-bottom: 30px;
       transition: transform 0.3s, box-shadow 0.3s;
+
     }
     .follow{
     margin-left: 30%;}
+    body.dark-mode .card-title{
+    color: black;}
+    .card h-100{
+    margin-top:3opx;}
