@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Following</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/myfollowing.css">
+    <link rel="stylesheet" href="../static/css/sidebar.css">
+</head>
+<body>
+{% include "navigationloggedin.html" %}
+{% include "sidebar.html" %}
+
+
+    <div class="container">
+        <h1>Users I'm Following</h1>
+        <div class="followers">
+            {% if allfollowing %}
+            {% for f in allfollowing %}
+            <div class="follower">
+               <a href="{{ url_for('profile',id=f.follower.id) }}"><p>{{ f.followed_user.fname }} {{ f.followed_user.lname }}</p></a>
+
+                <button class="unfollow-btn" follower-id="{{ f.follower_id }}" >Unfollow</button>
+            </div>
+            <hr>
+            {% endfor %}
+            {% else %}
+            <h3 style="margin-left: 30%;margin-top:40px;">You don't follow anyone yet</h3>
+            <a style="margin-left: 30%" href="{{ url_for('otherusers') }}"><button type="button" class="btn btn-info">Click her to see other users</button></a>
+
+            {% endif %}
+        </div>
+    </div>
+<nav class="my-4" aria-label="...">
+  <ul class="pagination justify-content-center">
+    <li class="page-item {{ 'disabled' if page <= 1 else '' }}">
+      <a class="page-link" href="{{ url_for('myfollowing', page=page-1) }}" tabindex="-1" aria-disabled="{{ 'true' if page <= 1 else 'false' }}">&laquo;</a>
+    </li>
+    {% for p in range(1, total_pages + 1) %}
+      <li class="page-item {{ 'active' if p == page else '' }}">
+        <a class="page-link" href="{{ url_for('myfollowing', page=p) }}">{{ p }}</a>
+      </li>
+    {% endfor %}
+    <li class="page-item {{ 'disabled' if page >= total_pages else '' }}">
+      <a class="page-link" href="{{ url_for('myfollowing', page=page+1) }}">&raquo;</a>
+    </li>
+  </ul>
+</nav>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/3259a3ed9a.js" crossorigin="anonymous"></script>
+  <script src="../static/js/darkmode.js"></script>
+<script src="../static/js/myfollowing.js"></script>
+</body>
+</html>
