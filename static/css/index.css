@@ -245,4 +245,56 @@ display: inline-block;}
         a{
         text-decoration: none;
         }
+/* Custom CSS for responsiveness */
+@media (max-width: 768px) {
+  .blogs, .projects, .users {
+    padding: 0 15px;
+  }
 
+  .blog-post, .project, .user {
+    margin-bottom: 20px;
+  }
+
+  .blog-post h3, .project h3, .user h3 {
+    font-size: 1.2em;
+  }
+
+  .cover-image {
+    background-size: cover;
+    height: 200px;
+  }
+
+  .hero-content h2 {
+    font-size: 1.5em;
+  }
+
+  .hero-content p {
+    font-size: 1em;
+  }
+
+  .github-link {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 575.98px) {
+    .blog-post, .project, .user {
+        padding: 10px;
+    }
+
+    .blog-post h3, .project h3, .user h3 {
+        font-size: 1.2em;
+    }
+
+    .hero-content h2 {
+        font-size: 1.5em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .github-link {
+        font-size: 0.7em;
+    }
+}

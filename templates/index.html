@@ -89,7 +89,6 @@
 
 {% include "sidebar.html" %}
 
-{% import "macros.html" as macros%}
     <div class="hero-content">
         <h2 style="margin-left: 0%;;">Welcome to SEcollab</h2>
         <p>A platform for software engineers to collaborate, write blogs, and connect with others.</p>
@@ -98,57 +97,57 @@
 
 </section>
 <div class="container">
-    <section id="blogs" class="blogs">
-        <a href="{{ url_for('allblogs') }}"> <h2>Latest Blogs</h2> </a>
-        {% for blog in blogs %}
-        <a href="{{ url_for('Specficblog', id=blog.id) }}">
-            <div class="blog-post">
-                <h3>{{ blog.title }}</h3>
-                <p>Written by: {{ blog.author.fname }} {{ blog.author.lname }}</p>
-                <p>Likes: {{ blog.like }}</p>
-                <p>Date: {{ blog.date }}</p>
-                <p>{{ blog.subtitle }}</p>
-            </div>
-        </a>
-        {% endfor %}
-    </section>
-
-    <section id="projects" class="projects">
-        <a href="{{ url_for('allcollbration') }}"><h2>Recent Projects</h2></a>
-        {% for collab in collabs %}
-        <a href="{{ url_for('specficcollabration', id=collab.id) }}">
-        <div class="project">
-
-            <h3>{{ collab.name }}</h3>
-            <p>Created by: {{ collab.user.fname }} {{ collab.user.lname }}</p>
-            <p>Description: {{ collab.description }}</p>
-            <p>Status: Open for Collaboration</p>
+    <section id="blogs" class="blogs row">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 mb-4">
+            <a href="{{ url_for('allblogs') }}">
+                <h2>Latest Blogs</h2>
+            </a>
+            {% for blog in blogs %}
+            <a href="{{ url_for('Specficblog', id=blog.id) }}">
+                <div class="blog-post">
+                    <h3>{{ blog.title }}</h3>
+                    <p>Written by: {{ blog.author.fname }} {{ blog.author.lname }}</p>
+                    <p>Likes: {{ blog.like }}</p>
+                    <p>Date: {{ blog.date }}</p>
+                    <p>{{ blog.subtitle }}</p>
+                </div>
+            </a>
+            {% endfor %}
         </div>
+
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 mb-4">
+            <a href="{{ url_for('allcollbration') }}">
+                <h2>Recent Projects</h2>
             </a>
-        {% endfor %}
+            {% for collab in collabs %}
+            <a href="{{ url_for('specficcollabration', id=collab.id) }}">
+                <div class="project">
+                    <h3>{{ collab.name }}</h3>
+                    <p>Created by: {{ collab.user.fname }} {{ collab.user.lname }}</p>
+                    <p>Description: {{ collab.description }}</p>
+                    <p>Status: Open for Collaboration</p>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
     </section>
 
-    <section id="users" class="users">
-       <a href="{{ url_for('otherusers') }}"> <h2>Featured Users</h2> </a>
-
-        {% for random_user in random_users %}
-
-        <a href="{{ url_for('profile', id=random_user.id) }}">
-        <div class="user">
-            <img src="../{{ random_user.profile_photo }}" alt="User Image">
-            <h3>{{ random_user.fname }} {{ random_user.lname }}</h3>
-            <p>Bio: {{ random_user.about_me }}</p>
+    <section id="users" class="users row">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 mb-6">
+            <a href="{{ url_for('otherusers') }}">
+                <h2>Featured Users</h2>
             </a>
-
-
-
-        <button user-id={{ random_user.id }} class="follow">Follow</button>
-
-    </div>
-
-
-
-        {% endfor %}
+            {% for random_user in random_users %}
+            <a href="{{ url_for('profile', id=random_user.id) }}">
+                <div class="user">
+                    <img src="../{{ random_user.profile_photo }}" alt="User Image">
+                    <h3>{{ random_user.fname }} {{ random_user.lname }}</h3>
+                    <p>Bio: {{ random_user.about_me }}</p>
+                    <button user-id={{ random_user.id }} class="follow">Follow</button>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
     </section>
 </div>
 
