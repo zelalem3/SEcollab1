@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var username = document.getElementById("username").value;
 
         // Check if the username is already taken
-        fetch("http://127.0.0.1:5000/fetchusername/" + username, {
+        fetch("http://100.25.23.191:5000/fetchusername/" + username, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

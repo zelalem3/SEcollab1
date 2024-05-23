@@ -7,7 +7,7 @@ register = document.getElementById("register");
   {
 if(register.textContent == "Register Interest")
 {
-  fetch("http://127.0.0.1:5000/interest/" + project_id, {
+  fetch("http://100.25.23.191:5000/interest/" + project_id, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -38,7 +38,7 @@ if(register.textContent == "Register Interest")
       });
 }
 else{
- fetch("http://127.0.0.1:5000/deleteinterest/" + project_id, {
+ fetch("http://100.25.23.191:5000/deleteinterest/" + project_id, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

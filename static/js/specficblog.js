@@ -18,7 +18,7 @@ icon.style.color = "blue";
 numlike.textContent = blog_like;
 
 like.addEventListener("click", function() {
-    fetch("http://127.0.0.1:5000/addoremovelike/" + blog_id, {
+    fetch("http://100.25.23.191:5000/addoremovelike/" + blog_id, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",

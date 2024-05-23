@@ -3,7 +3,7 @@ accepts.forEach(function(accept) {
     accept.addEventListener("click", function() {
         var userid = accept.getAttribute("user-id");
         var project_id = accept.getAttribute("project-id");
-        fetch("http://127.0.0.1:5000/accept/" + project_id + "/" + userid, {
+        fetch("http://100.25.23.191:5000/accept/" + project_id + "/" + userid, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

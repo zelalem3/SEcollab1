@@ -5,7 +5,7 @@ event.preventDefault();
 var text = document.getElementById("text").value;
 
 
- window.location.href = "http://127.0.0.1:5000/searchblog/" + text;
+ window.location.href = "http://100.25.23.191:5000/searchblog/" + text;
 
 
 });

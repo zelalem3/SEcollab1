@@ -6,7 +6,7 @@ unfollowButtons.forEach(function(button) {
 
   var user_id = button.getAttribute("follower-id");
     alert(user_id);
-    fetch("http://127.0.0.1:5000/unfollow/" + user_id, {
+    fetch("http://100.25.23.191:5000/unfollow/" + user_id, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

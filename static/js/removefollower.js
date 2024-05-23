@@ -5,7 +5,7 @@ all_remove.forEach(function(button){
 button.addEventListener("click", function() {
     follower_id = button.getAttribute("follower_id");
 
-    fetch("http://127.0.0.1:5000/removefollower/" + follower_id, {
+    fetch("http://100.25.23.191:5000/removefollower/" + follower_id, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
@@ -15,7 +15,7 @@ button.addEventListener("click", function() {
 
         if (response.ok) {
 
-            window.location.href = "http://127.0.0.1:5000/myfollowers";
+            window.location.href = "http://100.25.23.191:5000/myfollowers";
             return response.json();
         } else {
             throw new Error("Error: " + response.status);
