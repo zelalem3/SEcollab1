@@ -1,0 +1,71 @@
+       body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .navbar,
+body.dark-mode .footer,
+body.dark-mode .footer-bottom {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+body.dark-mode .navbar a,
+body.dark-mode .footer a,
+body.dark-mode .footer-bottom a {
+  color: #bb86fc;
+}
+
+body.dark-mode .container {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .parent {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+body.dark-mode .child {
+  background-color: #333333;
+  border: 1px solid #444444;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+body.dark-mode .details-button {
+  background-color: #bb86fc;
+  color: #121212;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+body.dark-mode .details-button:hover {
+  background-color: #9a67ea;
+}
+
+body.dark-mode .pagination .page-item .page-link {
+  background-color: #333333;
+  color: #bb86fc;
+  border: 1px solid #444444;
+}
+
+body.dark-mode .pagination .page-item.active .page-link {
+  background-color: #bb86fc;
+  color: #121212;
+  border: none;
+}
+
+body.dark-mode .form-control,
+body.dark-mode .btn-outline-success {
+  background-color: #333333;
+  color: #e0e0e0;
+  border: 1px solid #444444;
+}

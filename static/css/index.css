@@ -1,0 +1,314 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+
+
+.hero-content {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    color: white;
+}
+
+section {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.blog-post, .project, .user {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-left: 5px solid #2575fc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.blog-post h3, .project h3, .user h3 {
+    color: #333;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.login-container {
+    background-color: white;
+    max-width: 360px;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+    border-radius: 8px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.dropdown-menu li {
+    padding: 10px;
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    color: #333;
+}
+/* Custom CSS (if any) */
+.cover-image .text {
+    text-align: center;
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.features .feature img {
+    width: 100%;
+    height: auto;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-around; /* Adjusts space between sections */
+    margin: 20px;
+}
+
+.blogs, .projects, .users {
+    flex: 1; /* Each takes equal width */
+    margin: 0 10px; /* Space between columns */
+    padding: 10px;
+    background-color: #fff; /* White background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    border-radius: 5px; /* Rounded corners */
+    width:100%;
+}
+
+.blog-post, .project, .user {
+    margin-bottom: 20px; /* Space between entries */
+}
+
+.user img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    margin: 10px auto; /* Centering */
+}
+
+h2 {
+    text-align: center; /* Centers section headers */
+}
+.offcanvas a {
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.offcanvas a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.github-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+    margin-left: 0%;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: black; /* Use the default text color on hover */
+    text-decoration: none; /* Remove underline on hover */
+}
+
+.team {
+    padding: 50px 0;
+    background-color: #f8f9fa; /* Light gray background */
+}
+
+.member {
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 30px;
+    background-color: #fff; /* White background */
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle depth effect */
+}
+
+.member h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.member p {
+    font-size: 1rem;
+    color: #666; /* Lighter text color */
+    margin-bottom: 5px;
+}
+
+.member a {
+    color: #007bff; /* Blue link color */
+}
+
+.member a:hover {
+    text-decoration: none;
+    color: #0056b3; /* Darker blue on hover */
+}
+
+.features {
+    padding: 50px 0;
+    background-color: #f8f9fa; /* Light gray background */
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #333; /* Dark text color */
+}
+
+.feature {
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 30px;
+    background-color: #fff; /* White background */
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle depth effect */
+}
+
+.feature img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #666; /* Lighter text color */
+}
+
+    a{
+    text-decoration: none;
+    }
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .cover-image {
+        width: 100%;
+        height: 600px; /* adjust as needed */
+        background-image: url('../images/background.avif');
+        background-size: cover;
+        background-position: center;
+    }
+    .feature {
+        margin-top: 50px;
+    }
+    .containe {
+    position: relative;
+    text-align: center;
+}
+h2, h3{
+display: inline-block;}
+
+.text {
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: white; /* Text color */
+
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Adjust the styles as needed */
+
+        a{
+        text-decoration: none;
+        }
+/* Custom CSS for responsiveness */
+@media (max-width: 768px) {
+  .blogs, .projects, .users {
+    padding: 0 15px;
+  }
+
+  .blog-post, .project, .user {
+    margin-bottom: 20px;
+  }
+
+  .blog-post h3, .project h3, .user h3 {
+    font-size: 1.2em;
+  }
+
+  .cover-image {
+    background-size: cover;
+    height: 200px;
+  }
+
+  .hero-content h2 {
+    font-size: 1.5em;
+  }
+
+  .hero-content p {
+    font-size: 1em;
+  }
+
+  .github-link {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 575.98px) {
+    .blog-post, .project, .user {
+        padding: 10px;
+    }
+
+    .blog-post h3, .project h3, .user h3 {
+        font-size: 1.2em;
+    }
+
+    .hero-content h2 {
+        font-size: 1.5em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .github-link {
+        font-size: 0.7em;
+    }
+}

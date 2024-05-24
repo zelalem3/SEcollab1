@@ -1,0 +1,11 @@
+{% macro is_following(fuser, followers) %}
+  {% set is_following = false %}
+  {% for follower in followers %}
+
+    {% if follower.followed_user.id == fuser.id %}
+      {% set is_following = true %}
+
+    {% endif %}
+  {% endfor %}
+  {{ 'true' if is_following else 'false' }}
+{% endmacro %}

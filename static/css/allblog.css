@@ -1,0 +1,23 @@
+
+     body.dark-mode{
+    background-color: black;
+    }
+    body.dark-mode .container,
+    body.dark-mode .card{
+    background-color:black;
+    }
+        .navbar-nav .nav-link {
+  color: black;
+}
+.navbar-nav .nav-link.active {
+  color:black;
+}
+
+
+.navbar-nav .nav-link:hover {
+  color: grey;
+}
+body.dark-mode .card !important
+{
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
