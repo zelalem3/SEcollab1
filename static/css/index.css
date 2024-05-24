@@ -33,7 +33,7 @@ section {
     color: #333;
 }
 
-button {
+.follow {
     background-color: #4CAF50;
     color: white;
     border: none;
@@ -72,13 +72,7 @@ input[type="text"], input[type="password"] {
     text-decoration: none;
     color: #333;
 }
-/* Custom CSS (if any) */
-.cover-image .text {
-    text-align: center;
-    padding: 50px;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-}
+
 
 .features .feature img {
     width: 100%;
@@ -86,11 +80,7 @@ input[type="text"], input[type="password"] {
 }
 
 
-.container {
-    display: flex;
-    justify-content: space-around; /* Adjusts space between sections */
-    margin: 20px;
-}
+
 
 .blogs, .projects, .users {
     flex: 1; /* Each takes equal width */
@@ -226,13 +216,7 @@ a:hover {
     body {
         font-family: Arial, sans-serif;
     }
-    .cover-image {
-        width: 100%;
-        height: 600px; /* adjust as needed */
-        background-image: url('../images/background.avif');
-        background-size: cover;
-        background-position: center;
-    }
+
     .feature {
         margin-top: 50px;
     }
@@ -243,72 +227,39 @@ a:hover {
 h2, h3{
 display: inline-block;}
 
-.text {
-    position: absolute;
-    top: 15%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-    color: white; /* Text color */
-
-    padding: 20px;
-    border-radius: 5px;
+.cover-image {
+    width: 100%;
+    height: 600px; /* adjust as needed */
+    background-image: url('../images/background.avif');
+    background-size: cover;
+    background-position: center;
+    position: relative; /* add this to make absolute positioning work */
 }
 
+.cover-image .text {
+    position: absolute;
+    color:white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .cover-image .text {
+        font-size: 1.5rem; /* adjust as needed */
+    }
+}
+
+/* Media query for even smaller screens */
+@media (max-width: 576px) {
+    .cover-image .text {
+        font-size: 1.2rem; /* adjust as needed */
+    }
+}
 /* Adjust the styles as needed */
 
         a{
         text-decoration: none;
         }
-/* Custom CSS for responsiveness */
-@media (max-width: 768px) {
-  .blogs, .projects, .users {
-    padding: 0 15px;
-  }
-
-  .blog-post, .project, .user {
-    margin-bottom: 20px;
-  }
-
-  .blog-post h3, .project h3, .user h3 {
-    font-size: 1.2em;
-  }
-
-  .cover-image {
-    background-size: cover;
-    height: 200px;
-  }
-
-  .hero-content h2 {
-    font-size: 1.5em;
-  }
-
-  .hero-content p {
-    font-size: 1em;
-  }
-
-  .github-link {
-    font-size: 0.8em;
-  }
-}
-
-@media (max-width: 575.98px) {
-    .blog-post, .project, .user {
-        padding: 10px;
-    }
-
-    .blog-post h3, .project h3, .user h3 {
-        font-size: 1.2em;
-    }
-
-    .hero-content h2 {
-        font-size: 1.5em;
-    }
-
-    .hero-content p {
-        font-size: 1em;
-    }
-
-    .github-link {
-        font-size: 0.7em;
-    }
-}

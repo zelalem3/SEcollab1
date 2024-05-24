@@ -104,11 +104,7 @@ body.dark-mode .footer-bottom {
   color: #e0e0e0;
 }
 
-body.dark-mode .navbar a,
-body.dark-mode .footer a,
-body.dark-mode .footer-bottom a {
-  color: #bb86fc;
-}
+
 
 body.dark-mode .container {
   background-color: #1e1e1e;
